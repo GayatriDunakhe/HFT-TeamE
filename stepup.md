@@ -65,3 +65,30 @@ Building a comprehensive project like the Health and Fitness Tracker involves mu
 - Deploy your application to a web hosting platform, considering factors like scalability, reliability, and security.
 
 Remember that building a project of this scale will require continuous learning and problem-solving. You'll likely encounter challenges along the way, but that's part of the learning process. Start with small, manageable tasks, and gradually build up to the more complex aspects of the project. Be patient and don't hesitate to seek help from online tutorials, documentation, and developer communities as you progress. Good luck with your project!
+
+Floder structure
+health-fitness-tracker/
+│
+├── app/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── routes/
+│   │   ├── __init__.py
+│   │   ├── user_routes.py
+│   │   ├── admin_routes.py
+│   │   ├── landing_routes.py
+│   ├── static/
+│   │   ├── css/
+│   │   ├── js/
+│   │   ├── images/
+│   ├── templates/
+│   │   ├── user/
+│   │   ├── admin/
+│   │   ├── landing/
+│   │   ├── shared/
+│
+├── run.py
+├── config.py
+├── requirements.txt
