@@ -1,9 +1,18 @@
-<mxfile host="app.diagrams.net" modified="2023-10-20T02:04:20.574Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.46" etag="ZUNizYLybkphU0NUwEEk" version="22.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-20T05:49:10.432Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.2088.57" etag="Jc3JDVSgPjYM5t4FlaEb" version="22.0.5" type="github">
   <diagram name="Page-1" id="sQGgzUaZy7yGkq21Dc3f">
-    <mxGraphModel dx="3834" dy="4068" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4580" dy="4535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="krIxkYJXfylPc0ciONJd-103" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+          <mxGeometry x="860" y="-1570" width="1340" height="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-9" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="-1050" width="400" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-8" value="Diet Overview" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="-910" width="200" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="krIxkYJXfylPc0ciONJd-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="-785" y="-1040" width="720" height="1750" as="geometry" />
         </mxCell>
@@ -234,11 +243,8 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="krIxkYJXfylPc0ciONJd-103" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
-          <mxGeometry x="860" y="-1570" width="1340" height="1340" as="geometry" />
-        </mxCell>
-        <mxCell id="krIxkYJXfylPc0ciONJd-106" value="User Dashboard" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" parent="1" vertex="1">
-          <mxGeometry x="980" y="-1515" width="380" height="30" as="geometry" />
+        <mxCell id="krIxkYJXfylPc0ciONJd-106" value="Logo&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" parent="1" vertex="1">
+          <mxGeometry x="920" y="-1515" width="150" height="30" as="geometry" />
         </mxCell>
         <mxCell id="krIxkYJXfylPc0ciONJd-107" value="" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="2060" y="-1540" width="80" height="80" as="geometry" />
@@ -246,17 +252,146 @@
         <mxCell id="krIxkYJXfylPc0ciONJd-110" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1250" y="-1430" width="400" height="330" as="geometry" />
         </mxCell>
-        <mxCell id="krIxkYJXfylPc0ciONJd-111" value="My Diet plans" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
-          <mxGeometry x="890" y="-1305" width="200" height="30" as="geometry" />
+        <mxCell id="krIxkYJXfylPc0ciONJd-111" value="My Diet" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="920" y="-1280" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="krIxkYJXfylPc0ciONJd-112" value="Health Progress" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
-          <mxGeometry x="890" y="-1430" width="200" height="30" as="geometry" />
+        <mxCell id="krIxkYJXfylPc0ciONJd-112" value="Home" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="920" y="-1405" width="200" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="krIxkYJXfylPc0ciONJd-113" value="Worksouts" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
-          <mxGeometry x="890" y="-1370" width="200" height="30" as="geometry" />
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="krIxkYJXfylPc0ciONJd-113" target="ZWoFkb2FcAsr6ou6p-tb-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="krIxkYJXfylPc0ciONJd-113" value="My Activity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" parent="1" vertex="1">
+          <mxGeometry x="920" y="-1345" width="200" height="30" as="geometry" />
         </mxCell>
         <mxCell id="krIxkYJXfylPc0ciONJd-114" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1700" y="-1417" width="400" height="330" as="geometry" />
+          <mxGeometry x="1700" y="-1440" width="400" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-1" value="User Dashboard" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="1480" y="-1640" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-2" value="Notification icon" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1840" y="-1510" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="ZWoFkb2FcAsr6ou6p-tb-2" target="ZWoFkb2FcAsr6ou6p-tb-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-6" value="Activity Summary" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1350" y="-1290" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-7" value="Workout History" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="-1293" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-11" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1700" y="-1065" width="400" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-10" value="Mood &amp;amp; Sleep" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1800" y="-925" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-12" value="Settings" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-1140" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-15" value="Sleep &amp;amp; Mood" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="920" y="-1210" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-16" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="-20" width="1250" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-18" value="My Activity" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="1075" y="-80" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-19" value="You dosn&#39;t added any activity yet" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" vertex="1" parent="1">
+          <mxGeometry x="660" y="80" width="680" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZWoFkb2FcAsr6ou6p-tb-20" target="ZWoFkb2FcAsr6ou6p-tb-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-20" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="750" y="150" width="400" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-24" value="Add Activity with add icon button" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" vertex="1" parent="1">
+          <mxGeometry x="817.5" y="225" width="265" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="-20" width="1250" height="720" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-27" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="70" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-28" value="My Activites" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" vertex="1" parent="1">
+          <mxGeometry x="660" y="420" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-31" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="480" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-33" value="Runining" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="710" y="510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-35" value="45 Calories" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" vertex="1" parent="1">
+          <mxGeometry x="690" y="570" width="195" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-38" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="1010" y="480" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-39" value="Swmming" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="1060" y="510" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-40" value="23 Calories" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" vertex="1" parent="1">
+          <mxGeometry x="1050" y="570" width="195" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZWoFkb2FcAsr6ou6p-tb-42" target="ZWoFkb2FcAsr6ou6p-tb-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-42" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="405" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-43" value="History btn" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="420" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-45" value="This history btn will be the calendrer type where we can pick date and user can select the date then the my activates cards will Change&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1610" y="465" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-47" value="Drop down for activites" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="85" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-48" value="Running" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="150" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-49" value="Swimming" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="195" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-51" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="270" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-52" value="input box for duration" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="285" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-54" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2040" y="380" width="570" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-53" value="input box for intensity depend on the activite" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="395" width="480" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-62" value="" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="110" width="290" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-61" value="Runining" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontSize=20;" vertex="1" parent="1">
+          <mxGeometry x="2840" y="140" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="ZWoFkb2FcAsr6ou6p-tb-63" target="ZWoFkb2FcAsr6ou6p-tb-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-63" value="45 Calories" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=35;" vertex="1" parent="1">
+          <mxGeometry x="2820" y="200" width="195" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-64" value="This calories will calculated according to activates and&amp;nbsp; formula" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="320" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-66" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="495" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ZWoFkb2FcAsr6ou6p-tb-67" value="Calculate calories btn" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="2080" y="510" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
