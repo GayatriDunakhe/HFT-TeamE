@@ -1,0 +1,43 @@
+{% extends "user_base.html" %}
+
+{% block dashboard %}
+    <div class="row">
+        <!-- Large Card at the Bottom (Centered) -->
+        <div class="col-md-12 mb-4">
+            <div class="card">
+                <!-- Card content here... -->
+                <h1>{{ total_calories_burned }}  Calories burn Today</h1>
+            </div>
+        </div>
+
+        <!-- First Card on Top Left -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <!-- Card content here... -->
+                <h6> {{ total_activities }} Activity</h6>
+            </div>
+        </div>
+        <!-- Second Card on Top Right -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <!-- Card content here... -->
+                <h6>No Diet Plans</h6>
+            </div>
+        </div>
+        <!-- Third Card on Bottom Left -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <!-- Card content here... -->
+                <h6>set Sleep mode</h6>
+            </div>
+        </div>
+        <!-- Fourth Card on Bottom Right -->
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <!-- Card content here... -->
+                <h6>Your workout</h6>
+            </div>
+        </div>
+    </div>
+       
+{% endblock %}
