@@ -14,13 +14,8 @@
                     <div class="card">
                         <div class="card-body">
                             <h6 class="card-title">Your Current Mood</h6>
-                            <h3 class="card-text">
-                                {% if mood_data %}
-                                    {{ mood_data[0] }}
-                                {% else %}
-                                    <h5>Set Your Mood</h5>
-                                {% endif %}
-                            </h3>
+                            <h3 class="card-text">{{ mood_data.mood_rating }}</h3>
+
                         </div>
                     </div>
                 </div>
@@ -29,8 +24,8 @@
                 <div class="col-md-6 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h6 class="card-title">Total Sleep Hours</h6>
-                            <h3 class="card-text">{{ total_sleep_duration }} hours😴</h3>
+                            <h6 class="card-title">Sleep Hours</h6>
+                            <h3 class="card-text">{{ sleep_data.hours_slept }} hours😴</h3>
                         </div>
                     </div>
                 </div>

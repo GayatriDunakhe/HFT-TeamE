@@ -91,4 +91,3 @@ VALUES
     ('Dosa', 1, 133, 75, 11, 47, 'One Dosa gives 133 calories.', 'https://wallpapercave.com/wp/wp6734919.jpg'),
     ('Puri', 1, 101, 30, 5, 67, 'One Puri gives 101 calories.', 'https://www.seekpng.com/png/detail/254-2548049_poori-puri-indian-food-png-hd-stock-photos.png'),
     ('Bonda', 1, 68, 25, 10, 33, 'One Bonda gives 68 calories.', 'https://th.bing.com/th?id=OIP.i6WH8mNfTuY0VoV2T7NYigHaFj&w=288&h=216&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2');
-

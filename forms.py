@@ -50,10 +50,10 @@ class UserProfileForm(FlaskForm):
 class SleepMoodForm(FlaskForm):
     sleep_hours = IntegerField('Sleep Hours')
     mood = SelectField('Mood', choices=[
-        ('Happy😃', 'Happy😃'),
-        ('Sad☹️', 'Sad☹️'),
-        ('Angry😡', 'Angry😡'),
-        ('Calm😌', 'Calm😌')
+        ('happy', 'Happy😃'),
+        ('sad', 'Sad☹️'),
+        ('angry', 'Angry😡'),
+        ('calm', 'Calm😌')
     ])
     sleepiness = SelectField('Sleepiness', choices=[
         ('awake', 'Awake😵'),

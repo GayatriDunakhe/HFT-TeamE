@@ -1,5 +1,7 @@
 from flask import Flask, render_template, flash, redirect, url_for, request, session
+
 from forms import RegistrationForm, LoginForm, ActivityForm, UserProfileForm, SleepMoodForm, BMRForm
+
 import mysql.connector
 
 app = Flask(__name__)
@@ -86,6 +88,7 @@ def dashboard():
         # Get the total calories burned by the user
         total_calories_burned = get_total_calories(user_id)
 
+
         # Get the user current mood
         mood_data = fetch_mood_data(user_id)
 
@@ -104,6 +107,9 @@ def workout():
 
 @app.route('/diet')
 def diet():
+    # Your logic for the diet overview page here
+    return render_template('diet.html')
+  
     form = BMRForm()
 
     breakfast_items = fetch_food_items(1)
@@ -271,16 +277,17 @@ def insert_activity_data(activity_type, user_id, duration, intensity, calories_b
 
 def show_activity_data(user_id):
     cursor.execute("SELECT * FROM activity WHERE user_id = %s ORDER BY created_at DESC", (user_id,))
+
     past_activities = cursor.fetchall()
     return past_activities
 
 
 def get_total_activities(user_id):
-    total_activities_today = 0  # Initialize total_activities_today to 0
+    total_activities = 0  # Initialize total_activities to 0
 
-    cursor.execute("SELECT COUNT(*) FROM activity WHERE user_id = %s AND DATE(created_at) = CURRENT_DATE", (user_id,))
-    total_activities_today = cursor.fetchone()[0]
-    return total_activities_today
+    cursor.execute("SELECT COUNT(*) FROM activity WHERE user_id = %s", (user_id,))
+    total_activities = cursor.fetchone()[0]
+    return total_activities
 
 
 def get_total_calories(user_id):
@@ -330,12 +337,8 @@ def calculate_sleep_duration(sleepiness, sleep_hours):
     return max(duration, 0)  # Ensure the duration is non-negative
 
 def insert_sleep_data(user_id, sleepiness, sleep_hours):
-
-    # Calculate sleep duration
-    duration = calculate_sleep_duration(sleepiness, sleep_hours)
-
-    query = "INSERT INTO sleep (user_id, sleepiness_level, hours_slept, duration, date) VALUES (%s, %s, %s, %s, CURRENT_TIMESTAMP)"
-    data = (user_id, sleepiness, sleep_hours, duration)
+    query = "INSERT INTO sleep (user_id, sleepiness_level, hours_slept, date) VALUES (%s, %s, %s, CURRENT_TIMESTAMP)"
+    data = (user_id, sleepiness, sleep_hours)
 
     cursor.execute(query, data)  # Pass data as a single tuple
     db_connection.commit()
@@ -347,14 +350,15 @@ def insert_mood_data(user_id, mood):
     db_connection.commit()
 
 def fetch_sleep_data(user_id):
-    cursor.execute("SELECT * FROM sleep WHERE user_id = %s AND DATE(date) = CURRENT_DATE", (user_id,))
+    cursor.execute("SELECT * FROM sleep WHERE user_id = %s", (user_id,))
     sleep_data = cursor.fetchall()
     return sleep_data
 
 def fetch_mood_data(user_id):
-    cursor.execute("SELECT mood_rating, date FROM mood WHERE user_id = %s ORDER BY date DESC LIMIT 1", (user_id,))
-    recent_mood_data = cursor.fetchone()
-    return recent_mood_data
+    cursor.execute("SELECT * FROM mood WHERE user_id = %s", (user_id,))
+    mood_data = cursor.fetchall()
+    return mood_data
+
 
 if __name__ == '__main__':
     app.run(debug=True)
