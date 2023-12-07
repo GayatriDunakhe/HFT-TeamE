@@ -1,5 +1,7 @@
 from flask import Flask, render_template, flash, redirect, url_for, request, session
-from forms import RegistrationForm, LoginForm, ActivityForm, UserProfileForm, SleepMoodForm
+
+from forms import RegistrationForm, LoginForm, ActivityForm, UserProfileForm, SleepMoodForm, BMRForm
+
 import mysql.connector
 
 app = Flask(__name__)
@@ -86,10 +88,14 @@ def dashboard():
         # Get the total calories burned by the user
         total_calories_burned = get_total_calories(user_id)
 
+
+        # Get the user current mood
+        mood_data = fetch_mood_data(user_id)
+
         if total_calories_burned is None:
             total_calories_burned = 0
 
-        return render_template('dashboard.html', total_activities=total_activities, total_calories_burned=total_calories_burned)
+        return render_template('dashboard.html', total_activities=total_activities, total_calories_burned=total_calories_burned, mood_data=mood_data)
 
     else:
         return redirect(url_for('login'))  # Redirect to login page if user is not logged in
@@ -103,6 +109,61 @@ def workout():
 def diet():
     # Your logic for the diet overview page here
     return render_template('diet.html')
+  
+    form = BMRForm()
+
+    breakfast_items = fetch_food_items(1)
+    lunch_items = fetch_food_items(2)
+    dinner_items = fetch_food_items(3)    
+    
+    return render_template('diet.html', form=form, breakfast_items=breakfast_items, lunch_items=lunch_items, dinner_items=dinner_items)
+
+@app.route('/add_to_diet_plan', methods=['POST'])
+def add_to_diet_plan():
+    if request.method == 'POST':
+
+        user_id = session['user_id'][0] if 'user_id' in session and isinstance(session['user_id'], tuple) else None 
+
+        # Get the information about the food item that the user wants to add
+        food_name = request.form['food_name']
+        calories = request.form['calories']
+
+        insert_query = "INSERT INTO diet_plan (food_name, calories, user_id) VALUES (%s, %s, %s)"
+        cursor.execute(insert_query, (food_name, calories, user_id))
+        db.commit()
+
+    return redirect(request.referrer)
+
+def fetch_food_items(category):
+    cursor.execute("SELECT foodName, calories, carbohydrates, proteins, fats, descr, imageURL FROM food WHERE categoryID = %s",(category,))
+    food_data = cursor.fetchall()
+    return food_data    
+
+@app.route('/calculate_bmr', methods=['POST'])
+def calculate_bmr():
+    form = BMRForm()
+    if form.validate_on_submit():
+        weight = float(form.weight.data)
+        height = float(form.height.data)
+        age = int(form.age.data)
+        gender = form.gender.data
+
+        # Calculate BMR based on gender (Harris-Benedict equation)
+        if gender == 'male':
+            bmr = 88.362 + (13.397 * weight) + (4.799 * height) - (5.677 * age)
+        else:
+            bmr = 447.593 + (9.247 * weight) + (3.098 * height) - (4.330 * age)
+
+        # Pass the BMR result to the diet.html template
+        return render_template('diet.html', form=form, bmr=bmr)
+    
+    # If the form is not valid, return it to the diet.html template
+    return render_template('diet.html', form=form)
+
+
+@app.route('/drink_water')
+def waterTracker():
+    return render_template('drink_water.html')
 
 @app.route('/mood_sleep', methods=['GET', 'POST'])
 def mood_sleep():
@@ -127,7 +188,9 @@ def mood_sleep():
     sleep_data = fetch_sleep_data(user_id)
     mood_data = fetch_mood_data(user_id)
 
-    return render_template('mood_sleep.html', form=form, sleep_data=sleep_data, mood_data=mood_data)
+    total_sleep_duration = sum(entry[3] for entry in sleep_data)
+
+    return render_template('mood_sleep.html', form=form, sleep_data=sleep_data, mood_data=mood_data, total_sleep_duration=total_sleep_duration)
 
 @app.route('/profile', methods=['GET', 'POST'])
 def profile():
@@ -213,7 +276,8 @@ def insert_activity_data(activity_type, user_id, duration, intensity, calories_b
     db_connection.commit()
 
 def show_activity_data(user_id):
-    cursor.execute("SELECT * FROM activity WHERE user_id = %s", (user_id,))
+    cursor.execute("SELECT * FROM activity WHERE user_id = %s ORDER BY created_at DESC", (user_id,))
+
     past_activities = cursor.fetchall()
     return past_activities
 
@@ -225,8 +289,9 @@ def get_total_activities(user_id):
     total_activities = cursor.fetchone()[0]
     return total_activities
 
+
 def get_total_calories(user_id):
-    cursor.execute("SELECT SUM(calories_burned) FROM activity WHERE user_id = %s", (user_id,))
+    cursor.execute("SELECT SUM(calories_burned) FROM activity WHERE user_id = %s AND DATE(created_at) = CURRENT_DATE", (user_id,))
     total_calories_burned = cursor.fetchone()[0]
     return total_calories_burned
 
@@ -258,6 +323,19 @@ def update_user_profile(user_id, name, age, weight, height, gender):
         print("Error updating user profile:", e)
         db_connection.rollback()  # Roll back the transaction in case of an error
 
+def calculate_sleep_duration(sleepiness, sleep_hours):
+    # Define the sleep duration calculation logic based on sleepiness
+    if sleepiness == "awake":
+        duration = sleep_hours
+    elif sleepiness == "tired":
+        duration = sleep_hours - 1
+    elif sleepiness == "exhausted":
+        duration = sleep_hours - 2
+    else:
+        duration = sleep_hours  # Default to original sleep hours if sleepiness level is not recognized
+    
+    return max(duration, 0)  # Ensure the duration is non-negative
+
 def insert_sleep_data(user_id, sleepiness, sleep_hours):
     query = "INSERT INTO sleep (user_id, sleepiness_level, hours_slept, date) VALUES (%s, %s, %s, CURRENT_TIMESTAMP)"
     data = (user_id, sleepiness, sleep_hours)
@@ -280,6 +358,7 @@ def fetch_mood_data(user_id):
     cursor.execute("SELECT * FROM mood WHERE user_id = %s", (user_id,))
     mood_data = cursor.fetchall()
     return mood_data
+
 
 if __name__ == '__main__':
     app.run(debug=True)

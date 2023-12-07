@@ -1,0 +1,36 @@
+<!-- Dinner Modal -->
+<div class="modal fade" id="dinnerModal" tabindex="-1" role="dialog" aria-labelledby="dinnerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dinnerModalLabel">Dinner Menu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row gy-3 my-3">
+                        {% for item in dinner_items %}
+                            <div class="col-md-3">
+                                <div class="card d-flex">
+                                    <!-- foodName, calories, carbohydrates, proteins, fats, descr, imageURL -->
+                                    <img src="{{ item[6] }}" class="card-img-top" alt="{{ item[0] }}">
+                                    <div class="card-body flex-column">
+                                        <h5 class="card-title">{{ item[0] }}</h5>
+                                        <p class="card-text">{{ item[5] }}</p>
+                                        <p class="card-text">Calories: <b>{{ item[1] }}</b></p>
+                                        <p class="card-text">Carbohydrates: <b>{{ item[2] }}</b></p>
+                                        <p class="card-text">Proteins: <b>{{ item[3] }}</b></p>
+                                        <p class="card-text">Fats: <b>{{ item[4] }}</b></p>
+                                        <a href="#" class="btn btn-primary mt-auto">Take Today</a>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

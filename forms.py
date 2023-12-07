@@ -61,3 +61,10 @@ class SleepMoodForm(FlaskForm):
         ('exhausted', 'Exhausted😑')
     ])
     submit = SubmitField('Submit')
+
+class BMRForm(FlaskForm):
+    weight = StringField('Weight (kg):', validators=[InputRequired()])
+    height = StringField('Height (cm):', validators=[InputRequired()])
+    age = StringField('Age (years):', validators=[InputRequired()])
+    gender = SelectField('Gender:', choices=[('male', 'Male'), ('female', 'Female')])
+    submit = SubmitField('Calculate BMR')
